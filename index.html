@@ -1,1 +1,186 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHIEL . MON | Welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --accent-color: #ffb703; /* สีเหลืองทองเข้ากับธีม */
+            --text-color: #333;
+            --shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Header & Logo */
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .logo img { width: 100%; height: 100%; object-fit: cover; }
+
+        h1 { font-size: 1.8rem; margin: 10px 0; letter-spacing: 2px; }
+
+        .slogan {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        /* Grid Sections */
+        h2 {
+            font-size: 1.2rem;
+            margin: 30px 0 15px;
+            text-align: left;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+
+        .card i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+        }
+
+        .card p { margin: 0; font-weight: 500; font-size: 0.9rem; }
+
+        /* Contact Section */
+        .contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+
+        .fb { background-color: #1877f2; }
+        .line { background-color: #06c755; }
+        .contact-btn i { margin-right: 10px; }
+        .contact-btn:hover { opacity: 0.9; }
+
+        footer { margin-top: 40px; font-size: 0.8rem; color: #aaa; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="https://via.placeholder.com/100" alt="Logo">
+            </div>
+            <h1>CHIEL . MON</h1>
+            <p class="slogan">
+                ↷✦; w e l c o m e ❞<br>
+                ร้านชิเอลมอนยินดีให้บริการค่ะ สนใจบริการตรงไหน คลิกดู หรือ ทักสอบถามได้เลยนะคะ 𝐍𝐨𝐰 𝐥𝐨𝐚𝐝𝐢𝐧𝐠. . .
+            </p>
+        </div>
+
+        <h2><i class="fa-solid fa-bag-shopping"></i> สินค้า</h2>
+        <div class="grid">
+            <a href="#" class="card">
+                <i class="fa-solid fa-ghost"></i>
+                <p>Identity V</p>
+            </a>
+            <a href="#" class="card">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <p>Genshin Impact</p>
+            </a>
+            <a href="#" class="card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <p>RoV</p>
+            </a>
+        </div>
+
+        <h2><i class="fa-solid fa-screwdriver-wrench"></i> บริการ</h2>
+        <div class="grid">
+            <a href="#" class="card">
+                <i class="fa-solid fa-seedling"></i>
+                <p>ฟาร์ม Genshin<            p>
+            </a >
+            <a href="#" class="card">
+                <i class="fa-solid fa-trophy"></i>
+                <p>ดันเเรงค์ RoV</p>
+            </a>
+        </div>
+
+        <h2><i class="fa-solid fa-address-book"></i> Contact</h2>
+        <div class="contact-list">
+            <a href="https://www.facebook.com/share/1CTGfbxK8g/" class="contact-btn fb" target="_blank">
+                <i class="fa-brands fa-facebook"></i> Facebook
+            </a>
+            <a href="https://lin.ee/7pt6TZl" class="contact-btn line" target="_blank">
+                <i class="fa-brands fa-line"></i> Line Official
+            </a>
+        </div>
+
+        <footer>
+            © 2026 CHIEL . MON - All Rights Reserved
+        </footer>
+    </div>
+
+</body>
+</html>
 
